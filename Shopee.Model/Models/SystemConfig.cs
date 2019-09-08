@@ -15,6 +15,6 @@ namespace Shopee.Model.Models
         public string Code { get; set; }
         [MaxLength(50)]
         public string ValueString { get; set; }
-        public int? ValueInt { get;set }
+        public int? ValueInt { get; set; }
     }
 }
