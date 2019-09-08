@@ -9,12 +9,15 @@ namespace Shopee.Model.Models
     public class Tag
     {
         [Key]
-        [Required]
+        [MaxLength(50)]
         public string ID { get; set; }
+        [MaxLength(50)]
+        [Required]
         public string Name { get; set; }
+        [MaxLength(50)]
+        [Required]
         public string Type { get; set; }
 
-        public virtual PostTag PostTag { get; set; }
-        public virtual ProductTag ProductTag { get; set; }
+       
     }
 }

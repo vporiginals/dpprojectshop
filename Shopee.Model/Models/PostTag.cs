@@ -11,9 +11,12 @@ namespace Shopee.Model.Models
         public int PostID { get; set; }
 
         [Key]
+        [Column(TypeName = "varchar")]
+        [MaxLength(50)]
         public int TagID { get; set; }
-
-        public virtual IEnumerable<Post> Posts { get; set; }
-        public virtual IEnumerable<Tag> Tags { get; set; }
+        [ForeignKey("PostID")]
+        public virtual Post Post { get; set; }
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { get; set; }
     }
 }
