@@ -8,9 +8,10 @@ namespace Shopee.Model.Models
     public class ProductTag
     {
         [Key]
+        [Column(Order = 1)]
         public int ProductID { get; set; }
         [Key]
-        [Column(TypeName ="varchar")]
+        [Column(TypeName ="varchar",Order =2)]
         [MaxLength(50)]
         public string TagID { get; set; }
         [ForeignKey("ProductID")]
