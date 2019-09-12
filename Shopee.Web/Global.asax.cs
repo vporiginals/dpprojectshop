@@ -1,15 +1,10 @@
 using Shopee.Data;
 using Shopee.Web.Mappings;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-
 
 namespace Shopee.Web
 {
@@ -24,9 +19,6 @@ namespace Shopee.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.SetInitializer<ShopeeDbContext>(null);
-         
         }
-
     }
 }
-
