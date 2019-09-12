@@ -8,10 +8,10 @@ using Shopee.Service;
 using Shopee.Web.Infrastructure.Core;
 using Shopee.Web.Models;
 using Shopee.Web.Infrastructure.Extensions;
+
 namespace Shopee.Web.Api
 {
     [RoutePrefix("api/postcategory")]
-    [Authorize]
     public class PostCategoryController : ApiControllerBase
     {
         IPostCategoryService _postCategoryService;

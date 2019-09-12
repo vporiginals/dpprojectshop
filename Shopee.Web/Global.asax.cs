@@ -1,4 +1,5 @@
 using Shopee.Data;
+using Shopee.Web.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -18,10 +19,14 @@ namespace Shopee.Web
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            AutoMapperConfiguration.Configure();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.SetInitializer<ShopeeDbContext>(null);
+         
         }
+
     }
 }
+

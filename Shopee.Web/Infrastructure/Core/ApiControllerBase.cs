@@ -1,14 +1,12 @@
-﻿using Shopee.Model.Models;
-using Shopee.Service;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Shopee.Model.Models;
+using Shopee.Service;
 
 namespace Shopee.Web.Infrastructure.Core
 {
